@@ -12,6 +12,8 @@ c. Carros Disponibles para este Mercado: El sistema tomará en cuenta tanto la l
 específica.
 
 Para realizar las pruebas debes saber lo siguiente: 
+Inicialmente, debe clonar el proyecto y accerder a la consola, para poder crear la base de datos localmente, debe tener en cuenta que en mi caso mi servidor lo llame localhost, en caso de que no lo tenga asi debe proceder a cambiar el nombre en el archivo appsettings.json. Debido a que la conexión ya esta lista. Luego de esto debe proceder a ejecutar el comando **update-database** para luego proceder a realizar las pruebas. El proyecto esta documentado con swagger
+
 1. Localidad de Recogida, el proyecto solo tiene 5 localidades guardada usnado del 1 al 5, de lo contrara indicara que no existe la localidad
 2. Localidad de Devolución, Las localidades tiene las 5 localidades 1-5, de lo contrario encontrará que no se puede realizar la devolucion en esa localidad indicada, en este caso la 3 no permite realizar devolucion. Solo por criterios de prueba
 3. Carros Disponibles para este Mercado, en este caso deberas enviar la localidad que estas interesado, en este caso 1 a 5, adicionalmente latitude y longitud de la posicion del usuario, y adicionalmente se toma un parametro adicional de buscar en un radio de kilometro para listar los carros disponibles en este caso se recomienda usar los siguientes:
