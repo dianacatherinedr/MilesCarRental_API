@@ -30,10 +30,10 @@ namespace MilesCarRenta_API.Controllers
          */
         public async Task<ActionResult<CarDto>> GetCarAvaibleLocationPickup(int locationId)
         {
-            if(locationId == 0)
+            if (locationId == 0)
             {
                 _logger.LogError("Error al buscar locación:" + locationId);
-               return BadRequest();
+                return BadRequest();
             }
 
             // Buscar los carros disponibles basados en el ID de la ubicación
@@ -43,7 +43,7 @@ namespace MilesCarRenta_API.Controllers
                 {
                     Id = c.Id,
                     Plate_number = c.Plate_number,
-                    Model = c.Model,   
+                    Model = c.Model,
                     Brand = c.Brand,
                     Vehicule_type = c.Vehicule_type,
                     Engine_capacity = c.Engine_capacity
@@ -119,6 +119,39 @@ namespace MilesCarRenta_API.Controllers
             var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
             var distance = earthRadiusKm * c;
             return distance;
+        }
+
+        [HttpGet("location-delivery")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        /**
+         * Metodo que me permite validad el lugar de devolucion y entrega la opcion de devolución
+         */
+        public async Task<ActionResult<CarDto>> GetCarAvaibleLocationDelivery(int locationId)
+        {
+            try
+            {
+                // Buscar las opciones de devolución para la locación dada en la base de datos
+                var returnOptions = await _context.ReturnOptions
+                    .Where(c => c.Location_id == locationId)
+                    .ToListAsync();
+
+                if (returnOptions == null || returnOptions.Count == 0)
+                {
+                    _logger.LogError($"No se encuentra disponible para hacer la devolucion en esa locacion {locationId}");
+                    // No se encontraron opciones de devolución para la locación dada
+                    return NotFound();
+                }
+                
+                // Devolver las opciones de devolución encontradas
+                return Ok(returnOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error al obtener las opciones de devolución para la locación {locationId}: {ex.Message}");
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }

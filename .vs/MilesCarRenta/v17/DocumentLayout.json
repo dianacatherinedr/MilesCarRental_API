@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0701BC-123B-4EF7-9EC3-40C660FEFE57}|MilesCarRenta_API\\MilesCarRenta_API.csproj|c:\\users\\diana catherine\\documents\\github\\milescarrental_api\\milescarrenta_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0701BC-123B-4EF7-9EC3-40C660FEFE57}|MilesCarRenta_API\\MilesCarRenta_API.csproj|solutionrelative:milescarrenta_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240307182548_ModifyDataV1.cs",
+              "DocumentMoniker": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs",
+              "RelativeDocumentMoniker": "MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs",
+              "ToolTip": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs",
+              "RelativeToolTip": "MilesCarRenta_API\\Migrations\\20240307182548_ModifyDataV1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T18:25:48.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240307181044_ModifyData.cs",
+              "DocumentMoniker": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs",
+              "RelativeDocumentMoniker": "MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs",
+              "ToolTip": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs",
+              "RelativeToolTip": "MilesCarRenta_API\\Migrations\\20240307181044_ModifyData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T18:10:44.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "MilesCarRenta_API\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\Diana Catherine\\Documents\\GitHub\\MilesCarRental_API\\MilesCarRenta_API\\Controllers\\CarController.cs",
+              "RelativeToolTip": "MilesCarRenta_API\\Controllers\\CarController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAIwJEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T18:06:46.959Z",
+              "EditorCaption": ""
             }
           ]
         }

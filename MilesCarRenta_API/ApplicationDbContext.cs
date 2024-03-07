@@ -13,6 +13,8 @@ namespace MilesCarRenta_API
         public DbSet<Car> Cars { get; set; }
         public DbSet<Location> Locations { get; set; }
 
+        public DbSet<ReturnOptions> ReturnOptions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Car>().HasData(
@@ -173,7 +175,7 @@ namespace MilesCarRenta_API
                 {
                     Id = 4,
                     Description = "La devolucion se realizará en horario laboral de 8 a 12 y de 2 a 6 en el parqueadero disponible",
-                    Location_id = 1,
+                    Location_id = 5,
                     Address = " Carrera 15 #54-43 Bastilla Parqueadero ",
                     Name_receiving_mamanger = "Lorena Arias"
 
@@ -186,8 +188,16 @@ namespace MilesCarRenta_API
                     Address = " 80 con calle 10 #89-74",
                     Name_receiving_mamanger = "Eliza Flores"
 
-                }
+                },
+                new ReturnOptions()
+                {
+                    Id = 6,
+                    Description = "Esta locación no tiene opcion de devolución",
+                    Location_id = 1,
+                    Address = "",
+                    Name_receiving_mamanger = ""
 
+                }
                 );
 
 

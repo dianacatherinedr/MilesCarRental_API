@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MilesCarRenta_API;
 
@@ -11,9 +12,11 @@ using MilesCarRenta_API;
 namespace MilesCarRenta_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240307181044_ModifyData")]
+    partial class ModifyData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,78 +75,78 @@ namespace MilesCarRenta_API.Migrations
                         {
                             Id = 1,
                             Brand = "Chevrolet",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3098),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2854),
                             Engine_capacity = "1600cc",
                             Location_id = 1,
                             Model = "2018",
                             Plate_number = "PTH15E",
                             Status = "D",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3112),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2868),
                             Vehicule_type = "Camioneta"
                         },
                         new
                         {
                             Id = 2,
                             Brand = "Chevrolet",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3115),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2870),
                             Engine_capacity = "1200cc",
                             Location_id = 1,
                             Model = "2022",
                             Plate_number = "KNQ32",
                             Status = "D",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3115),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2871),
                             Vehicule_type = "Automovil"
                         },
                         new
                         {
                             Id = 3,
                             Brand = "Mazda",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3117),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2872),
                             Engine_capacity = "1400cc",
                             Location_id = 2,
                             Model = "2009",
                             Plate_number = "ATR21",
                             Status = "O",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3117),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2873),
                             Vehicule_type = "Automovil"
                         },
                         new
                         {
                             Id = 4,
                             Brand = "Nissan",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3119),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2874),
                             Engine_capacity = "1600cc",
                             Location_id = 3,
                             Model = "2017",
                             Plate_number = "KNP98",
                             Status = "O",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3119),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2875),
                             Vehicule_type = "Campero"
                         },
                         new
                         {
                             Id = 5,
                             Brand = "Nissan",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3121),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2876),
                             Engine_capacity = "1600cc",
                             Location_id = 4,
                             Model = "2017",
                             Plate_number = "KNP98",
                             Status = "O",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3121),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2876),
                             Vehicule_type = "Campero"
                         },
                         new
                         {
                             Id = 6,
                             Brand = "Wolsvagen",
-                            Created_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3122),
+                            Created_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2878),
                             Engine_capacity = "1600cc",
                             Location_id = 3,
                             Model = "2007",
                             Plate_number = "ARS45",
                             Status = "D",
-                            Updated_at = new DateTime(2024, 3, 7, 13, 25, 48, 597, DateTimeKind.Local).AddTicks(3123),
+                            Updated_at = new DateTime(2024, 3, 7, 13, 10, 44, 339, DateTimeKind.Local).AddTicks(2878),
                             Vehicule_type = "Sub"
                         });
                 });
@@ -316,16 +319,6 @@ namespace MilesCarRenta_API.Migrations
                             Description = "La devolucion se realizará en horario de la tarde en el local directamente",
                             Location_id = 3,
                             Name_receiving_mamanger = "Eliza Flores",
-                            Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Address = "",
-                            Created_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Esta locación no tiene opcion de devolución",
-                            Location_id = 1,
-                            Name_receiving_mamanger = "",
                             Updated_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MilesCarRenta_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac6a8ca04e074336fcecc6d4d9c165b0f093ed8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53194e174ba40f0938585ea3328645c5708c5b39")]
 [assembly: System.Reflection.AssemblyProductAttribute("MilesCarRenta_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MilesCarRenta_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
